@@ -1,0 +1,1 @@
+dk run -it --name upl -v${PWD}/data:/home/jovyan/data -v/Users/hickst/.irods:/home/jovyan/.irods uploader-de

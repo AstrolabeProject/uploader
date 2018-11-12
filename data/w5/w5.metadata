@@ -1,0 +1,140 @@
+# HDU 0 in w5.fits:
+SIMPLE  =                    T / Written by SkyView Mon Sep 24 16:13:12 EDT 2012
+BITPIX  =                  -32 / 4 byte floating point                          
+NAXIS   =                    2 / Two dimensional image                          
+NAXIS1  =                 1000 / Width of image                                 
+NAXIS2  =                 1000 / Height of image                                
+CRVAL1  =                43.46 / Reference longitude                            
+CRVAL2  =                60.38 / Reference latitude                             
+RADESYS = 'FK5     '           / Coordinate system                              
+EQUINOX =               2000.0 / Epoch of the equinox                           
+CTYPE1  = 'RA---TAN'           / Coordinates -- projection                      
+CTYPE2  = 'DEC--TAN'           / Coordinates -- projection                      
+CRPIX1  =                500.5 / X reference pixel                              
+CRPIX2  =                500.5 / Y reference pixel                              
+CDELT1  =   -0.003000000000000 / X scale                                        
+CDELT2  =    0.003000000000000 / Y scale                                        
+COMMENT                                                                         
+COMMENT  SkyView Survey metadata                                                
+COMMENT                                                                         
+COMMENT Provenance:  WISE Archive (IRSA/IPAC)                                   
+COMMENT Copyright:   WISE data is in the public domain but publications are re  
+COMMENT           quested to include the       statment:        This publicati  
+COMMENT           on makes use of data products from the Wide-field Infrared S  
+COMMENT           urvey Explorer,       which is a joint project of the Univer  
+COMMENT           sity of California, Los Angeles,       and the Jet Propulsio  
+COMMENT           n Laboratory/California Institute of Technology,       funde  
+COMMENT           d by the National Aeronautics and Space Administration.       
+COMMENT Regime:      Infrared                                                   
+COMMENT NSurvey:     4                                                          
+COMMENT Frequency:   25 THz (12 micrometers)                                    
+COMMENT Bandpass:    18-40 THz                                                  
+COMMENT Coverage:    All sky                                                    
+COMMENT PixelScale:  1.375"                                                     
+COMMENT PixelUnits:  DN                                                         
+COMMENT Resolution:  6.5"                                                       
+COMMENT Coordinates: Equatorial                                                 
+COMMENT Projection:  Sine                                                       
+COMMENT Epoch:       January 7 to August 6, 2010                                
+COMMENT Reference:    Wright et al (2010)                                       
+COMMENT                                                                         
+COMMENT Survey specific cards                                                   
+COMMENT                                                                         
+SURVEY  = 'WISE 12 micron allsky release'                                       
+HISTORY                                                                         
+HISTORY  Settings used in processing:                                           
+HISTORY                                                                         
+HISTORY cache = /skyview8/cache/surveys/                                        
+HISTORY coordinates = J2000.0                                                   
+HISTORY coordselect = J2000                                                     
+HISTORY cs = standard                                                           
+HISTORY deedger = skyview.process.Deedger                                       
+HISTORY descriptionxslt = cgifiles/description.xsl                              
+HISTORY dummy                                                                   
+HISTORY equinox = 2000                                                          
+HISTORY finalpostprocessor = skyview.ij.IJProcessor,skyview.data.BoxSmoother,sky
+HISTORY float = on                                                              
+HISTORY footertemplate = cgifiles/skyfooter.html                                
+HISTORY galleryxslt = cgifiles/gallerymultipage.xsl                             
+HISTORY headertemplate = cgifiles/skyheader.html                                
+HISTORY htmlwriter = skyview.request.HTMLWriter                                 
+HISTORY imagefactory = skyview.survey.CachingImageFactory                       
+HISTORY imagesize = 1.6                                                         
+HISTORY imscale = 3                                                             
+HISTORY localurl = http://skyview.gsfc.nasa.gov/surveys,/skyview/htdocs/surveys 
+HISTORY lut = colortables/b-w-linear.bin                                        
+HISTORY lutcbarpath = /images/colorbars/                                        
+HISTORY mosaicker = skyview.process.Mosaicker                                   
+HISTORY name = WISE 12 Micron All-Sky Survey                                    
+HISTORY noexit =                                                                
+HISTORY nullimagedir = ../images/nodata                                         
+HISTORY nwindow = on                                                            
+HISTORY output = ../tempspace/fits/skv7286600634832                             
+HISTORY outputroot = ../tempspace/fits/                                         
+HISTORY pixels = 1000                                                           
+HISTORY position = 43.46, 60.38                                                 
+HISTORY postprocessor = skyview.ij.IJProcessor,skyview.request.HTMLWriter       
+HISTORY projection = Tan                                                        
+HISTORY quicklook = jpeg                                                        
+HISTORY reqxpos = 43.46                                                         
+HISTORY reqypos = 60.38                                                         
+HISTORY resolver = SIMBAD-NED                                                   
+HISTORY rgbtemplate = cgifiles/skyrgb.html                                      
+HISTORY rgbwriter = skyview.request.RGBWriter                                   
+HISTORY sampler = Default                                                       
+HISTORY savebysurvey                                                            
+HISTORY scale = 0.0003819                                                       
+HISTORY scaling = loglog                                                        
+HISTORY settingsupdaters = BatchCompatibility,SettingsFixer,skyview.request.Toas
+HISTORY shortname = Wise W3,Wise 12, WiseW3, Wise12                             
+HISTORY siabase = http://skyview.gsfc.nasa.gov/cgi-bin/images?                  
+HISTORY siaimagetimeout = 1200000                                               
+HISTORY siapfilterfield = VOX:BandPass_ID                                       
+HISTORY siapfiltervalue = W3                                                    
+HISTORY siapurl = http://irsa.ipac.caltech.edu/ibe/sia/wise/allsky/4band_p3am_cd
+HISTORY size = 3.0,3.0                                                          
+HISTORY spcoordinates =                                                         
+HISTORY survey = WISE 12                                                        
+HISTORY surveyfinder = skyview.survey.XMLSurveyFinder                           
+HISTORY surveymanifest = surveys/survey.manifest                                
+HISTORY surveysheader = cgifiles/survey.header                                  
+HISTORY surveytemplate = cgifiles/skysurvey.html                                
+HISTORY url.heasarcbase = http://heasarc.gsfc.nasa.gov/xamin/vo/cone?table=     
+HISTORY url.ned = http://nedwww.ipac.caltech.edu/cgi-bin/nph-NEDobjsearch?search
+HISTORY url.simbad = http://simbad.u-strasbg.fr/simbad-conesearch.pl?           
+HISTORY url.vizierbase = http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-out
+HISTORY urlcoordinates = http://heasarc.gsfc.nasa.gov/cgi-bin/Tools/convcoord/co
+HISTORY urllocalhelp = http://skyview.gsfc.nasa.gov/help/help.html              
+HISTORY webrootpath = /skyview/htdocs/                                          
+HISTORY                                                                         
+HISTORY  Map generated at: Mon Sep 24 16:13:12 EDT 2012                         
+HISTORY                                                                         
+HISTORY  Resampler used: NNSampler                                              
+HISTORY                                                                         
+HISTORY                                                                         
+HISTORY Image mosaicking using skyview.geometry.Mosaicker                       
+HISTORY                                                                         
+HISTORY   Used image:/skyview8/cache/surveys/Wise_W3/0460p590_ab41-w3-int-3.fits
+HISTORY   Used image:/skyview8/cache/surveys/Wise_W3/0432p590_ab41-w3-int-3.fits
+HISTORY   Used image:/skyview8/cache/surveys/Wise_W3/0403p590_ab41-w3-int-3.fits
+HISTORY   Used image:/skyview8/cache/surveys/Wise_W3/0450p605_ab41-w3-int-3.fits
+HISTORY   Used image:/skyview8/cache/surveys/Wise_W3/0420p605_ab41-w3-int-3.fits
+HISTORY   Used image:/skyview8/cache/surveys/Wise_W3/0390p605_ab41-w3-int-3.fits
+HISTORY   Used image:/skyview8/cache/surveys/Wise_W3/0480p605_ab41-w3-int-3.fits
+HISTORY   Used image:/skyview8/cache/surveys/Wise_W3/0442p620_ab41-w3-int-3.fits
+HISTORY   Used image:/skyview8/cache/surveys/Wise_W3/0410p620_ab41-w3-int-3.fits
+HISTORY   Used image:/skyview8/cache/surveys/Wise_W3/0473p620_ab41-w3-int-3.fits
+HISTORY                                                                         
+HISTORY                                                                         
+HISTORY Edge adjustments applied (skyview.geometry.DeedgerList                  
+HISTORY                                                                         
+HISTORY      Image 0403p590_ab41-w3-int-3.fits offset by -10.0955810546875      
+HISTORY      Image 0432p590_ab41-w3-int-3.fits offset by -14.76416015625        
+HISTORY      Image 0460p590_ab41-w3-int-3.fits offset by -18.1815185546875      
+HISTORY      Image 0390p605_ab41-w3-int-3.fits offset by 1.0014190673828125     
+HISTORY      Image 0410p620_ab41-w3-int-3.fits offset by -5.81903076171875      
+HISTORY      Image 0442p620_ab41-w3-int-3.fits offset by -1.201446533203125     
+HISTORY      Image 0450p605_ab41-w3-int-3.fits offset by -12.527557373046875    
+HISTORY      Image 0473p620_ab41-w3-int-3.fits offset by -8.7635498046875       
+HISTORY      Image 0480p605_ab41-w3-int-3.fits offset by -10.600997924804688    
+HISTORY                                                                         
