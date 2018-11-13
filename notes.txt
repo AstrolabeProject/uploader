@@ -1,1 +1,2 @@
-dk run -it --name upl -v${PWD}/data:/home/jovyan/data -v/Users/hickst/.irods:/home/jovyan/.irods uploader-de
+dk build -t uploader-de .
+dk run -it --name uploader -v/Users/hickst/.irods:/home/jovyan/.irods -v${PWD}/data:/home/jovyan/data uploader-de
