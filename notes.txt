@@ -1,2 +1,2 @@
 dk build -t uploader-de .
-dk run -it --name uploader -v/Users/hickst/.irods:/home/jovyan/.irods -v${PWD}/data:/home/jovyan/data uploader-de
+dk run -it --rm --name uploader -v/Users/hickst/.irods:/home/jovyan/.irods -v${PWD}/data:/home/jovyan/data uploader-de

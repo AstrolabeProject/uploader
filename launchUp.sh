@@ -57,8 +57,7 @@ case "$?" in
     ;;
 esac
 
-echo "IRODS: ${IRODS_DIR}"
-echo " DATA: ${DATA_DIR}"
+# echo "IRODS: ${IRODS_DIR}"
+# echo " DATA: ${DATA_DIR}"
 
-echo docker run -it --name upl$$ -v${IRODS_DIR}:/home/jovyan/.irods -v${DATA_DIR}:/home/jovyan/data uploader-de
-docker container ls -a
+docker run -it --rm --name uploader -v${IRODS_DIR}:/home/jovyan/.irods -v${DATA_DIR}:/home/jovyan/data uploader-de
