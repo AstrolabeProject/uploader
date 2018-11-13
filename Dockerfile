@@ -19,14 +19,15 @@ RUN wget -qO - https://packages.irods.org/irods-signing-key.asc | apt-key add - 
 
 USER jovyan
 
-# mount points for optional external user data and work volumes
-RUN mkdir -p /home/jovyan/data /home/jovyan/irods
-
 # install the iRods python client library
 RUN pip install python-irodsclient
 
 # install the Astrolabe python library
 RUN pip install astrolabe_py
 
+# mount points for external user data and iRods configuration volumes
+RUN mkdir -p /home/jovyan/data /home/jovyan/.irods
+
+# ENTRYPOINT ["/bin/bash"]
 ENTRYPOINT ["uploader"]
 CMD ["-v", "/home/jovyan/data"]
