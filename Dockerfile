@@ -28,6 +28,7 @@ RUN pip install astrolabe_py
 # mount points for external user data and iRods configuration volumes
 RUN mkdir -p /home/jovyan/data /home/jovyan/.irods
 
-# ENTRYPOINT ["/bin/bash"]
-ENTRYPOINT ["uploader"]
-CMD ["-v", "/home/jovyan/data"]
+# copy in the wrapper shell and run it
+COPY startUp.sh /home/jovyan/startUp.sh
+
+ENTRYPOINT ["/home/jovyan/startUp.sh"]
