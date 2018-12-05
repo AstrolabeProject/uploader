@@ -2,7 +2,7 @@
 
 # Bash script to take parameters and launch the Astrolabe Uploader program.
 #   Written by: Tom Hicks. 11/12/2018.
-#   Last Modified: Redo to require only the data directory.
+#   Last Modified: Update for project rename.
 #
 progname=`basename $0`
 
@@ -26,4 +26,4 @@ if [ ! -r "$DATA_DIR" ]; then
 fi
 
 echo "Uploading FITS files from '${DATA_DIR}'..."
-docker run -it --rm --name uploader -v${DATA_DIR}:/home/jovyan/data hickst/uploader-de
+docker run -it --rm --name uploader -v${DATA_DIR}:/home/jovyan/data hickst/uploader

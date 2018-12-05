@@ -1,2 +1,2 @@
-dk build -t uploader-de .
-dk run -it --rm --name uploader -v${PWD}/data:/home/jovyan/data uploader-de
+dk build -t uploader .
+dk run -it --rm --name uploader -v${PWD}/data:/home/jovyan/data uploader
