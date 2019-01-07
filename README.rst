@@ -18,22 +18,22 @@ Use the script to upload FITS files
 -----------------------------------
 
 To upload files from your local disk to iRods, this project provides the
-`uploadToIRods.sh` Bash script which, in turn, just uses the existing `DockerHub
-image <https://hub.docker.com/r/hickst/uploader>_`
+``uploadToIRods.sh`` Bash script which, in turn, just uses the existing
+`DockerHub image <https://hub.docker.com/r/hickst/uploader>`_
 
 **You must have Docker installed locally on your machine before you can
 invoke the Bash script.** Once Docker is installed and activated,
-download the `uploadToIRods.sh` Bash script.
+download the ``uploadToIRods.sh`` Bash script.
 
 To upload FITS files to iRods, run the script and point it at a single FITS file or at a
 directory tree containing multiple FITS files. Before the upload begins you will be asked
 for your Cyverse iRods username and password.
 
-**Note that the file or directory path specified to the Bash script must be a an absolute
+**Note that the file or directory path specified to the Bash script must be an absolute
 path or a "child" path of the current directory (and may NOT include '.' or '..').**
 
 Files and directories will be uploaded to a sub-directory of your home iRods storage space
-named `astrolabe`. Any nested and intermediate directories will be created on the iRods data
+named ``astrolabe``. Any nested and intermediate directories will be created on the iRods data
 store, but only if they ultimately contain at least one FITS file. Nested directories that
 do not contain FITS files will not be recreated on the iRods data store.
 
@@ -49,7 +49,7 @@ Examples::
 Building and running manually
 -----------------------------
 
-Building this software requires `Docker 18+` and follows the normal
+Building this software requires ``Docker 18+`` and follows the normal
 Docker build procedure::
 
    git clone https://github.com/AstrolabeProject/uploader.git
@@ -57,7 +57,7 @@ Docker build procedure::
    docker build -t uploader .
 
 A local instance of the Uploader image may then be invoked, as in the following example,
-which uploads all FITS files from the `astrodata` directory and any child directories::
+which uploads all FITS files from the ``astrodata`` directory and any child directories::
 
   docker run -it --rm --name uploader -v${PWD}/astrodata:/home/jovyan/data uploader
 
