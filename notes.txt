@@ -1,2 +1,2 @@
 dk build -t uploader .
-dk run -it --rm --name uploader -v${PWD}/data:/home/jovyan/data uploader
+dk run -it --rm --name uploader -e IPLANT_USER=hickst -v${PWD}/data:/home/jovyan/data uploader
