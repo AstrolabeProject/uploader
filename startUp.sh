@@ -5,8 +5,6 @@
 #
 progname=`basename $0`
 
-THIS_USER=${1}
-
 IRODS_DIR=.irods
 IRODS_ENV_JSON=irods_environment.json
 ROOT_DIR=/home/jovyan
@@ -19,9 +17,8 @@ init_icmds ()
 {
     "irods_host": "data.cyverse.org",
     "irods_port": 1247,
-    "irods_user_name": "$THIS_USER",
-    "irods_zone_name": "iplant",
-    "irods_default_resource" : "CyVerseRes"
+    "irods_user_name": "$IPLANT_USER",
+    "irods_zone_name": "iplant"
 }
 ICMDS_JSON
 }
