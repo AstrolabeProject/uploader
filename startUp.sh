@@ -2,12 +2,13 @@
 
 # Bash script launch the Astrolabe Uploader program from within a Docker image.
 #   Written by: Tom Hicks. 11/20/2018.
+#   Last Modified: Update for rebase on Ubuntu.
 #
 progname=`basename $0`
 
 IRODS_DIR=.irods
 IRODS_ENV_JSON=irods_environment.json
-ROOT_DIR=/home/jovyan
+ROOT_DIR=/root
 
 # Creates a partial, default iRods environment file.
 init_icmds ()
@@ -30,4 +31,4 @@ echo "Running iinit..."
 iinit
 
 echo "Running Uploader..."
-exec uploader -v ${ROOT_DIR}/data
+exec uploader -v /data
